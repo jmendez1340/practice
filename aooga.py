@@ -26,13 +26,16 @@ while selection >= 0:
     except ValueError:
         print "Please enter a number"
 
-
     def returning():
         a = selection
-        if a == 1:
+        if a <= 1:
             return "You are a returning customer"
-        elif a == 2:
+        print returning()
+
+else:
+
+    def new():
+        a = selection
+        if a <= 3:
             return "You are a new customer"
-        else:
-            return "Welcome"
-    print returning()
+    print new()
